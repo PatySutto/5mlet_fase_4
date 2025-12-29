@@ -1,0 +1,5 @@
+yfinance==1.0
+scikit-learn
+numpy
+torch
+pytorch-lightning
