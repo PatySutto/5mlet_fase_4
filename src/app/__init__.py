@@ -18,8 +18,8 @@ Data: 2024
 # IMPORTS
 # ============================================================================
 
-from dados import Dados
-from LSTM_trainer import LSTMTrainer
+from .dados import Dados
+from .LSTM_trainer import LSTMTrainer
 
 
 # ============================================================================
@@ -301,4 +301,4 @@ if __name__ == "__main__":
     # trainer_apple = treinar_empresa_unica('AAPL', '2020-01-01', '2023-12-31')
     
     # Exemplo: Fazer previsões
-    # prever_proximos_dias(modelos['AAPL']['trainer'], n_dias=30)
+    prever_proximos_dias(modelos['AAPL']['trainer'], n_dias=30)

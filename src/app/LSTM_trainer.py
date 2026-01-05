@@ -1,9 +1,10 @@
 from typing import Optional, List, Dict, Any
+import os
 import numpy as np
 import torch
 import pytorch_lightning as pl
 from pytorch_lightning.callbacks import EarlyStopping, ModelCheckpoint
-from LSTM_predictor import LSTMPredictor
+from .LSTM_predictor import LSTMPredictor
 
 class LSTMTrainer:
     """
@@ -154,9 +155,10 @@ class LSTMTrainer:
             ),
             ModelCheckpoint(
                 monitor='val_loss',
-                dirpath='checkpoints/',
-                filename=f'{self.empresa}-{{epoch:02d}}-{{val_loss:.4f}}',
-                save_top_k=3,
+                dirpath='models/',
+                filename=f'{self.empresa}-best-{{val_loss:.4f}}',
+                save_top_k=1,
+                save_last=False,
                 mode='min'
             )
         ]
@@ -298,7 +300,7 @@ class LSTMTrainer:
         print(f"{'='*80}\n")
     
     
-    def salvar_modelo(self, caminho: str = 'modelo_lstm.ckpt') -> None:
+    def salvar_modelo(self, caminho: str = 'models/modelo_lstm.ckpt') -> None:
         """
             Salva o modelo treinado.
             
@@ -310,7 +312,12 @@ class LSTMTrainer:
         """
         if self.model is None:
             raise ValueError("❌ Nenhum modelo para salvar")
-        
+
+        # garante que a pasta exista
+        pasta = os.path.dirname(caminho)
+        if pasta:
+            os.makedirs(pasta, exist_ok=True)
+
         self.trainer.save_checkpoint(caminho)
         print(f"✓ Modelo salvo em: {caminho}")
     
