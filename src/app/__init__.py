@@ -77,11 +77,6 @@ def main():
     print("\nPrimeiros registros:")
     print(df.head())
     
-    # # Obtém estatísticas
-    # print("\n[1/7] ESTATÍSTICAS DOS DADOS:")
-    # estatisticas = dados_obj.obter_estatisticas(df)
-    # print(estatisticas)
-    
     # ------------------------------------------------------------------------
     # ETAPA 2: PREPARAR DADOS PARA LSTM
     # ------------------------------------------------------------------------
@@ -132,10 +127,8 @@ def main():
         print(f"\n[6/7] AVALIANDO MODELO PARA {empresa}...")
         metricas = trainer.avaliar()
         
-        # # ETAPA 7: VISUALIZAR E SALVAR
-        # print(f"\n[7/7] VISUALIZANDO RESULTADOS PARA {empresa}...")
-        # trainer.plotar_resultados(n_pontos=200)
-        
+        # ETAPA 7:  SALVAR
+               
         # Salvar modelo
         nome_arquivo = f'modelo_{empresa}.ckpt'
         trainer.salvar_modelo(nome_arquivo)
@@ -227,29 +220,6 @@ def treinar_empresa_unica(empresa: str, data_inicio: str, data_fim: str):
     return trainer
 
 
-def prever_proximos_dias(trainer: LSTMTrainer, n_dias: int = 30):
-    """
-    Faz previsões para os próximos N dias (exemplo conceitual).
-    
-    Args:
-        trainer: Objeto LSTMTrainer treinado
-        n_dias: Número de dias para prever
-    
-    Note:
-        Esta é uma implementação conceitual. Para produção,
-        seria necessário implementar rolling forecast adequadamente.
-    """
-    print(f"\n{'='*80}")
-    print(f"PREVISÃO PARA OS PRÓXIMOS {n_dias} DIAS")
-    print(f"{'='*80}")
-    print("\n⚠️  Nota: Esta é uma implementação conceitual.")
-    print("Para produção, implemente rolling forecast adequadamente.\n")
-    
-    # Aqui você implementaria a lógica de previsão rolling
-    # Por enquanto, apenas um placeholder
-    print(f"Previsões para {trainer.empresa} seriam geradas aqui.")
-
-
 def comparar_modelos(modelos_treinados: dict):
     """
     Compara performance de múltiplos modelos.
@@ -300,5 +270,3 @@ if __name__ == "__main__":
     # Exemplo: Treinar apenas uma empresa
     # trainer_apple = treinar_empresa_unica('AAPL', '2020-01-01', '2023-12-31')
     
-    # Exemplo: Fazer previsões
-    prever_proximos_dias(modelos['AAPL']['trainer'], n_dias=30)
