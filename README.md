@@ -5,7 +5,7 @@ Este projeto desenvolvido como parte do curso de Pós-Tech da FIAP e tem como ob
 - **Dataset**: A base de dados utilizada neste projeto foi a Yahoo Finance.
 
 - **Deploy**:<br>
-Você pode testar a aplicação online neste link: [Streamlit App](https://fivemlet-f3-streamlit.onrender.com/)<br>
+Você pode testar a aplicação online neste link: [Streamlit App](https://fivemlet-fase-4.onrender.com/)<br>
 
 ## 📁 Estrutura do Projeto
 
