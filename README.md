@@ -40,10 +40,12 @@ Este projeto foi desenvolvido como parte do curso Pós-Tech da FIAP e tem como o
 
 ## 🛠️ Como Executar o Projeto Localmente
 
+Foi utilizado o Python 3.13
+
 ### 1. Clone o Repositório
 
 ```bash
-git clone https://github.com/PatySutto/5mlet_fase_3.git
+git clone https://github.com/PatySutto/5mlet_fase_4.git
 ```
 
 ### 2. Crie um Ambiente Virtual
@@ -59,9 +61,17 @@ source .\venv\Scripts\activate   # No Linux: venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 4. Execute os modelos
-
+### 4. Como executar localmente
+#### Windowns
+```
+run_streamlit.bat 
+```
+ou
 ```
 streamlit run src/streamlit_app.py
-Escolha o modelo desejado e clique em "Run All".
+```
+
+#### Linux
+```
+streamlit run src/streamlit_app.py
 ```
