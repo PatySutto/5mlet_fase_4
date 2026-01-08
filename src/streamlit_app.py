@@ -77,7 +77,7 @@ if not files:
     st.warning('Nenhum arquivo .ckpt encontrado. Gere um modelo primeiro ou coloque um .ckpt em models/ ou src/app/models/.')
 
 # Barra lateral: navegação e controles
-page = st.sidebar.radio('Página', ['Forecast', 'Treinamento'])
+page = st.sidebar.radio('Página', ['Forecast'])
 
 if page == 'Forecast':
     st.header('Forecast')
@@ -177,6 +177,4 @@ if page == 'Forecast':
 
                 csv_bytes = df_out.to_csv(index=False).encode('utf-8')
                 st.download_button('Baixar CSV', data=csv_bytes, file_name=f'forecast_{empresa}_{dias}d.csv', mime='text/csv')
-elif page == 'Treinamento':
-    st.header('Treinamento de Modelo LSTM')
-   
+  
