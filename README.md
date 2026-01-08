@@ -26,14 +26,14 @@ Este projeto foi desenvolvido como parte do curso Pós-Tech da FIAP e tem como o
 
 ```
 - **`src/`**: Diretório principal que contém os códigos-fonte da aplicação e os modelos gerados.
-  - **`streamlit_app.py`**: Aplicação desenvolvida em Streamlit para utilização dos modelos LSTM já treinados, permitindo a visualização de previsões.
-  - **`app/`**: Diretório que concentra os módulos responsáveis pela manipulação de dados, treinamento e inferência do modelo.
+    - **`streamlit_app.py`**: Aplicação desenvolvida em Streamlit para utilização dos modelos LSTM já treinados, permitindo a visualização de previsões.
+    - **`app/`**: Diretório que concentra os módulos responsáveis pela manipulação de dados, treinamento e inferência do modelo.
         - **`__init__.py`**: Arquivo que define o diretório como um pacote Python.
         - **`dados.py`**: Responsável pela obtenção, tratamento e preparação dos dados utilizados no modelo, incluindo a coleta via Yahoo Finance.
         - **`LSTM_predictor.py`**: Responsável por definir e utilizar o modelo LSTM para previsão de séries temporais. Este módulo implementa a arquitetura do modelo, os passos de treinamento, validação e teste, além de realizar previsões a partir de sequências de dados, com suporte à normalização e desnormalização dos valores.
         - **`LSTM_trainer.py`**: Script responsável pelo treinamento do modelo LSTM, incluindo definição da arquitetura, treinamento e salvamento do modelo.
         - **`models/`**: Diretório onde ficam armazenados os modelos LSTM treinados.
-- **`run_streamlit.bat`**: Script para facilitar a execução da aplicação Streamlit em ambiente Windows..
+- **`run_streamlit.bat`**: Script para facilitar a execução da aplicação Streamlit em ambiente Windows.
 - **`README.md`**: Documento de descrição do projeto, contendo informações gerais.
 - **`requirements.txt`**: Lista de dependências necessárias para executar o projeto corretamente..
 
