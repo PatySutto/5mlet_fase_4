@@ -1,16 +1,15 @@
 # LSTM - Projeto da Pós Tech FIAP 
 
-Este projeto desenvolvido como parte do curso de Pós-Tech da FIAP e tem como objetivo construir um modelo LSTM.<br>
+Este projeto foi desenvolvido como parte do curso Pós-Tech da FIAP e tem como objetivo a construção de um modelo de Deep Learning baseado em LSTM (Long Short-Term Memory) para análise e previsão de séries temporais.<br>
 
-- **Dataset**: A base de dados utilizada neste projeto foi a Yahoo Finance.
+- **Dataset**: Dataset: Os dados utilizados foram obtidos a partir da plataforma Yahoo Finance, amplamente utilizada para análise de ativos financeiros.
 
-- **Deploy**:<br>
-Você pode testar a aplicação online neste link: [Streamlit App](https://fivemlet-fase-4.onrender.com/)<br>
+- **Deploy**: A aplicação está disponível online e pode ser acessada pelo link:: [Streamlit App](https://fivemlet-fase-4.onrender.com/)<br>
 
 ## 📁 Estrutura do Projeto
 
 ```bash
-5mlet_postech/
+5mlet_fase_4/
 ├── src/
 │   ├── streamlit_app.py
 │   └── app/
