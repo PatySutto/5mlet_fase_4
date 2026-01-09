@@ -4,7 +4,7 @@ Este projeto foi desenvolvido como parte do curso Pós-Tech da FIAP e tem como o
 
 - **Dataset**: Os dados utilizados foram obtidos a partir da plataforma Yahoo Finance, amplamente utilizada para análise de ativos financeiros.
 
-- **Deploy**: A aplicação está disponível online e pode ser acessada pelo link:: [Streamlit App](https://fivemlet-fase-4.onrender.com/)<br>
+- **Deploy**: A aplicação está disponível online e pode ser acessada pelo link: [Streamlit App](https://fivemlet-fase-4.onrender.com/)<br>
 
 ## 📁 Estrutura do Projeto
 
