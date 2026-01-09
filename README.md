@@ -2,7 +2,7 @@
 
 Este projeto foi desenvolvido como parte do curso Pós-Tech da FIAP e tem como objetivo a construção de um modelo de Deep Learning baseado em LSTM (Long Short-Term Memory) para análise e previsão de séries temporais.<br>
 
-- **Dataset**: Dataset: Os dados utilizados foram obtidos a partir da plataforma Yahoo Finance, amplamente utilizada para análise de ativos financeiros.
+- **Dataset**: Os dados utilizados foram obtidos a partir da plataforma Yahoo Finance, amplamente utilizada para análise de ativos financeiros.
 
 - **Deploy**: A aplicação está disponível online e pode ser acessada pelo link:: [Streamlit App](https://fivemlet-fase-4.onrender.com/)<br>
 

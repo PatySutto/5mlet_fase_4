@@ -1,23 +1,3 @@
-"""
-Script principal para execução completa da solução de predição LSTM.
-
-Este script executa todo o pipeline:
-1. Coleta de dados
-2. Preparação para LSTM
-3. Criação do modelo
-4. Treinamento
-5. Avaliação
-6. Visualização
-7. Salvamento
-
-Autor: Sistema de Predição de Ações
-Data: 2024
-"""
-
-# ============================================================================
-# IMPORTS
-# ============================================================================
-
 from .dados import Dados
 from .LSTM_trainer import LSTMTrainer
 

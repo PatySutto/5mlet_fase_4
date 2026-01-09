@@ -1,6 +1,6 @@
 yfinance==1.0
-scikit-learn
-numpy
-torch
-pytorch-lightning
-streamlit
+scikit-learn==1.8.0
+numpy==2.4.0
+torch==2.9.1
+pytorch-lightning==2.6.0
+streamlit==1.52.2
